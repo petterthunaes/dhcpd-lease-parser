@@ -6,7 +6,7 @@ use warnings;
 use lib "/Users/petter/perl5/lib/perl5";
 use Data::Dumper;
 
-my $filename = "test/dhcpd.leases.new";
+my $filename = "test/dhcpd.leases";
 
 my $open = 0;
 my $decl; 
@@ -73,7 +73,7 @@ while( my ($key1, $href1) = each( %$decl ) ) {
 	while( my ($key2, $href2 ) = each( %$href1 ) ) {
 		print"\t$key2\n";
 		
-		while( my ( $key3, $val ) = each( $href2 ) ) {
+		while( my ( $key3, $val ) = each( %$href2 ) ) {
 			print "\t\t$key3 -- $val\n";
 		}
 	}
