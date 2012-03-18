@@ -6,7 +6,7 @@ use warnings;
 use lib "/Users/petter/perl5/lib/perl5";
 use Data::Dumper;
 
-my $filename = "test/dhcpd.leases";
+my $filename = "test/dhcpd.leases.new";
 
 my $open = 0;
 my $decl; 
@@ -92,6 +92,8 @@ while (my $line = <$fh>) {
 	
 }
 
+close $fh;
+
 for my $k1 ( sort keys %$decl ) {
 	print "$k1\n";
 	for my $k2 ( sort keys %{$decl->{$k1}} ) {
@@ -102,7 +104,5 @@ for my $k1 ( sort keys %$decl ) {
 	}
 
 }
-
-#print Dumper($decl);
 
 exit 0;
