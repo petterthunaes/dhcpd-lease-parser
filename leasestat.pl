@@ -10,27 +10,83 @@ my $filename = "test/dhcpd.leases";
 
 my $open = 0;
 my $decl = {};
-my $ip;
-
-my ($i,$k);
 
 open my $fh, '<', $filename or die "ERR - Could not open file: $!";
+
+my ($ip,$i,$k);
+
 while (my $line = <$fh>) {
-	chomp($line);
-	if ( ! $open && $line =~ /^lease (\d+\.\d+\.\d+\.\d+) \{$/ ) {
-		$ip = $1;
-		$open = 1;
-		$i++;
+
+	if ( $line =~ /^(server-duid|failover)/ ) {
 		next;
 	}
 
-	if ( $open ) {
-		if ( $line =~ /\}$/ ) {
-			$open = 0;
-		} else {
-			$k++;
-			$decl->{$i}->{$ip}->{$k} = $line;
+	$line =~ s/^\s+//;
+	$line =~ s/\s+$//;	
+
+	if ( $line =~ /^lease (\d+\.\d+\.\d+\.\d+) \{$/ ) {
+		$ip = $1;
+		$i++;
+		next;
+	}
+	if ( $line =~ /\}$/ ) {
+		next;
+	} else {
+		my ($value_name,$value);
+		if ( $line =~ /^starts (\d) (\d+)\/(\d+)\/(\d+) (\d+\:\d+\:\d+)\;$/ ) {
+			$value_name = "starts";
+			$value = "$1 $2-$3-$4 $5";
+		} 
+        if ( $line =~ /^ends (\d) (\d+)\/(\d+)\/(\d+) (\d+\:\d+\:\d+)\;$/ ) {
+            $value_name = "ends"; 
+            $value = "$1 $2-$3-$4 $5"; 
+        }
+        if ( $line =~ /^tstp (\d) (\d+)\/(\d+)\/(\d+) (\d+\:\d+\:\d+)\;$/ ) {
+            $value_name = "tstp"; 
+            $value = "$1 $2-$3-$4 $5"; 
+        }
+        if ( $line =~ /^tsfp (\d) (\d+)\/(\d+)\/(\d+) (\d+\:\d+\:\d+)\;$/ ) {
+            $value_name = "tsfp"; 
+            $value = "$1 $2-$3-$4 $5"; 
+        }
+        if ( $line =~ /^atsfp (\d) (\d+)\/(\d+)\/(\d+) (\d+\:\d+\:\d+)\;$/ ) {
+            $value_name = "atsfp"; 
+            $value = "$1 $2-$3-$4 $5"; 
+        }
+        if ( $line =~ /^cltt (\d) (\d+)\/(\d+)\/(\d+) (\d+\:\d+\:\d+)\;$/ ) {
+            $value_name = "cltt"; 
+            $value = "$1 $2-$3-$4 $5"; 
+        }
+        if ( $line =~ /^binding state (\w+)\;$/ ) {
+			$value_name = "binding-state";
+			$value = $1;
+        }
+        if ( $line =~ /^next binding state (\w+)\;$/ ) {
+        	$value_name = "next-binding-state";
+            $value = $1;
+        }
+        if ( $line =~ /^hardware ethernet (.*)\;$/ ) {
+			$value_name = "hardware-ethernet";
+            $value = $1;
+        }
+        if ( $line =~ /^set ddns-txt = \"(.*)\"\;$/ ) {
+        	$value_name = "ddns-txt";
+            $value = $1;
+        }
+        if ( $line =~ /^set ddns-fwd-name = \"(.*)\"\;$/ ) {
+			$value_name = "ddns-name";
+            $value = $1;
+        }
+        if ( $line =~ /^client-hostname \"(.*)\"\;$/ ) {
+			$value_name = "hostname";
+            $value = $1;
+        }
+		if ( $line =~ /^uid \"(.*)\"\;/ ) {
+			$value_name = "uid";
+            $value = $1;
 		}
+
+		$decl->{$i}->{$ip}->{$value_name} = $value;
 	}
 	
 }
