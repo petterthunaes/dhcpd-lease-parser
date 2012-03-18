@@ -37,54 +37,32 @@ while (my $line = <$fh>) {
 			$value_name = "starts";
 			$value = "$1 $2-$3-$4 $5";
 		} 
-        if ( $line =~ /^ends (\d) (\d+)\/(\d+)\/(\d+) (\d+\:\d+\:\d+)\;$/ ) {
-            $value_name = "ends"; 
-            $value = "$1 $2-$3-$4 $5"; 
-        }
-        if ( $line =~ /^tstp (\d) (\d+)\/(\d+)\/(\d+) (\d+\:\d+\:\d+)\;$/ ) {
-            $value_name = "tstp"; 
-            $value = "$1 $2-$3-$4 $5"; 
-        }
-        if ( $line =~ /^tsfp (\d) (\d+)\/(\d+)\/(\d+) (\d+\:\d+\:\d+)\;$/ ) {
-            $value_name = "tsfp"; 
-            $value = "$1 $2-$3-$4 $5"; 
-        }
-        if ( $line =~ /^atsfp (\d) (\d+)\/(\d+)\/(\d+) (\d+\:\d+\:\d+)\;$/ ) {
-            $value_name = "atsfp"; 
-            $value = "$1 $2-$3-$4 $5"; 
-        }
-        if ( $line =~ /^cltt (\d) (\d+)\/(\d+)\/(\d+) (\d+\:\d+\:\d+)\;$/ ) {
-            $value_name = "cltt"; 
-            $value = "$1 $2-$3-$4 $5"; 
-        }
-        if ( $line =~ /^binding state (\w+)\;$/ ) {
-			$value_name = "binding-state";
-			$value = $1;
-        }
-        if ( $line =~ /^next binding state (\w+)\;$/ ) {
-			$value_name = "next-binding-state";
+       
+       if( $line =~ / (\d) (\d+)\/(\d+)\/(\d+) (\d+\:\d+\:\d+)\;$/ ) {
+       	$value = "$1 $2-$3-$4 $5";
+        $value_name = "$1"	if $line =~ /^(ends|tstp|tsfp|atsfp|cltt) /;
+       }
+       elsif( $line =~ /^binding state (\w+)\;$/ ){ 
+       	$value = $1;
+       	$value_name = "binding-state";
+       }
+              elsif( $line =~ /^next binding state (\w+)\;$/ ){ 
+       	$value = $1;
+       	$value_name = "next-binding-state";
+       }
+       
+       elsif ( $line =~ /^hardware ethernet (.*)\;$/ ) {
+       	$value_name = "hardware-ethernet";
             $value = $1;
         }
-        if ( $line =~ /^hardware ethernet (.*)\;$/ ) {
-			$value_name = "hardware-ethernet";
-            $value = $1;
+       elsif ( $line =~ /^set (ddns-txt|ddns-fwd-name) = \"(.*)\"\;$/ ) {
+	$value_name = "$1";
+            $value = $2;
         }
-        if ( $line =~ /^set ddns-txt = \"(.*)\"\;$/ ) {
-			$value_name = "ddns-txt";
-            $value = $1;
+        elsif ( $line =~ /^(client-hostname|uid) \"(.*)\"\;$/ ) {
+			$value_name = "$1";
+            $value = $2;
         }
-        if ( $line =~ /^set ddns-fwd-name = \"(.*)\"\;$/ ) {
-			$value_name = "ddns-name";
-            $value = $1;
-        }
-        if ( $line =~ /^client-hostname \"(.*)\"\;$/ ) {
-			$value_name = "hostname";
-            $value = $1;
-        }
-		if ( $line =~ /^uid \"(.*)\"\;/ ) {
-			$value_name = "uid";
-            $value = $1;
-		}
 		if (defined $value) {
 			$decl->{$i}->{$ip}->{$value_name} = $value;
 		}
