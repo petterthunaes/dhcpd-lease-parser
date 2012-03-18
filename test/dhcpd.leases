@@ -1,0 +1,1363 @@
+# The format of this file is documented in the dhcpd.leases(5) manual page.
+# This lease file was written by isc-dhcp-4.1.1-P1
+
+
+failover peer "dhcp-failover" state {
+  my state normal at 6 2012/03/17 05:38:52;
+  partner state normal at 5 2012/03/16 00:42:05;
+}
+lease 10.0.0.68 {
+  starts 5 2012/03/16 01:19:13;
+  ends 5 2012/03/16 01:03:43;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 01:19:13;
+  atsfp 5 2012/03/16 01:19:13;
+  binding state free;
+  hardware ethernet d0:67:e5:44:e8:48;
+  uid "\001\320g\345D\350H";
+}
+lease 10.0.0.129 {
+  starts 5 2012/03/16 18:44:35;
+  ends 5 2012/03/16 18:43:41;
+  tstp 5 2012/03/16 01:19:52;
+  tsfp 5 2012/03/16 18:44:35;
+  atsfp 5 2012/03/16 18:44:35;
+  binding state free;
+  hardware ethernet 3c:07:54:18:03:15;
+  uid "\001<\007T\030\003\025";
+}
+lease 10.0.0.135 {
+  starts 5 2012/03/16 19:39:44;
+  ends 5 2012/03/16 19:49:44;
+  tstp 5 2012/03/16 19:49:44;
+  tsfp 5 2012/03/16 19:54:44;
+  atsfp 5 2012/03/16 19:54:44;
+  cltt 5 2012/03/16 19:39:44;
+  binding state free;
+  hardware ethernet 00:50:56:9d:04:66;
+  uid "\001\000PV\235\004f";
+}
+lease 10.0.0.136 {
+  starts 5 2012/03/16 19:48:43;
+  ends 5 2012/03/16 19:58:43;
+  tstp 5 2012/03/16 19:58:43;
+  tsfp 5 2012/03/16 20:03:43;
+  atsfp 5 2012/03/16 20:03:43;
+  cltt 5 2012/03/16 19:48:43;
+  binding state free;
+  hardware ethernet 00:50:56:9d:04:66;
+}
+lease 10.0.0.64 {
+  starts 5 2012/03/16 18:39:57;
+  ends 5 2012/03/16 20:39:57;
+  tstp 5 2012/03/16 20:39:57;
+  tsfp 5 2012/03/16 21:39:57;
+  atsfp 5 2012/03/16 21:39:57;
+  cltt 5 2012/03/16 18:39:57;
+  binding state free;
+  hardware ethernet b8:8d:12:56:2b:05;
+  uid "\001\270\215\022V+\005";
+}
+lease 10.0.0.138 {
+  starts 5 2012/03/16 23:57:34;
+  ends 6 2012/03/17 00:07:34;
+  tstp 6 2012/03/17 00:07:34;
+  tsfp 6 2012/03/17 00:12:34;
+  atsfp 6 2012/03/17 00:12:34;
+  cltt 5 2012/03/16 23:57:34;
+  binding state free;
+  hardware ethernet d0:67:e5:38:63:57;
+}
+lease 10.0.0.140 {
+  starts 6 2012/03/17 02:47:21;
+  ends 6 2012/03/17 02:57:21;
+  tstp 6 2012/03/17 02:57:21;
+  tsfp 6 2012/03/17 03:02:21;
+  atsfp 6 2012/03/17 03:02:21;
+  cltt 6 2012/03/17 02:47:21;
+  binding state free;
+  hardware ethernet 00:50:56:9d:04:6f;
+}
+lease 10.0.0.141 {
+  starts 6 2012/03/17 05:18:50;
+  ends 6 2012/03/17 05:23:21;
+  tstp 6 2012/03/17 05:23:21;
+  tsfp 6 2012/03/17 05:23:21;
+  atsfp 6 2012/03/17 05:23:21;
+  cltt 6 2012/03/17 05:18:50;
+  binding state free;
+  hardware ethernet 00:50:56:9d:04:71;
+}
+lease 10.0.0.76 {
+  starts 6 2012/03/17 11:39:08;
+  ends 6 2012/03/17 11:11:49;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 6 2012/03/17 11:39:08;
+  atsfp 6 2012/03/17 11:39:08;
+  binding state free;
+  hardware ethernet 5c:26:0a:20:6e:98;
+}
+lease 10.0.0.77 {
+  starts 6 2012/03/17 11:39:08;
+  ends 6 2012/03/17 11:11:50;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 6 2012/03/17 11:39:08;
+  atsfp 6 2012/03/17 11:39:08;
+  binding state free;
+  hardware ethernet c8:2a:14:04:7c:09;
+  uid "\001\310*\024\004|\011";
+}
+lease 10.0.0.78 {
+  starts 6 2012/03/17 11:09:56;
+  ends 6 2012/03/17 11:19:56;
+  tstp 6 2012/03/17 11:19:56;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state free;
+  hardware ethernet 3c:07:54:18:03:15;
+  uid "\001<\007T\030\003\025";
+}
+lease 10.0.0.80 {
+  starts 6 2012/03/17 16:30:44;
+  ends 6 2012/03/17 16:32:08;
+  tstp 6 2012/03/17 16:32:08;
+  tsfp 6 2012/03/17 16:32:08;
+  atsfp 6 2012/03/17 16:32:08;
+  binding state free;
+  hardware ethernet 3c:07:54:18:03:15;
+  uid "\001<\007T\030\003\025";
+}
+lease 10.0.0.81 {
+  starts 6 2012/03/17 17:39:19;
+  ends 6 2012/03/17 16:48:02;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 6 2012/03/17 17:39:19;
+  atsfp 6 2012/03/17 17:39:19;
+  binding state free;
+  hardware ethernet d0:67:e5:44:e8:48;
+  uid "\001\320g\345D\350H";
+}
+lease 10.0.0.83 {
+  starts 6 2012/03/17 18:39:19;
+  ends 6 2012/03/17 17:45:23;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 6 2012/03/17 18:39:19;
+  atsfp 6 2012/03/17 18:39:19;
+  binding state free;
+  hardware ethernet 00:50:56:9d:04:74;
+}
+lease 10.0.0.148 {
+  starts 6 2012/03/17 17:41:45;
+  ends 6 2012/03/17 17:51:45;
+  tstp 6 2012/03/17 17:51:45;
+  tsfp 6 2012/03/17 17:56:45;
+  atsfp 6 2012/03/17 17:56:45;
+  cltt 6 2012/03/17 17:41:45;
+  binding state free;
+  hardware ethernet 00:50:56:9d:04:73;
+}
+lease 10.0.0.149 {
+  starts 6 2012/03/17 17:43:24;
+  ends 6 2012/03/17 17:53:24;
+  tstp 6 2012/03/17 17:53:24;
+  tsfp 6 2012/03/17 17:58:24;
+  atsfp 6 2012/03/17 17:58:24;
+  cltt 6 2012/03/17 17:43:24;
+  binding state free;
+  hardware ethernet 00:50:56:9d:04:74;
+}
+lease 10.0.0.147 {
+  starts 6 2012/03/17 20:47:23;
+  ends 6 2012/03/17 20:57:23;
+  tstp 6 2012/03/17 20:57:23;
+  tsfp 6 2012/03/17 21:02:23;
+  atsfp 6 2012/03/17 21:02:23;
+  cltt 6 2012/03/17 20:47:23;
+  binding state free;
+  hardware ethernet 00:26:b9:cd:22:c1;
+  uid "\001\000&\271\315\"\301";
+}
+lease 10.0.0.126 {
+  starts 6 2012/03/17 22:31:45;
+  ends 6 2012/03/17 22:41:45;
+  tstp 6 2012/03/17 22:41:45;
+  tsfp 6 2012/03/17 22:46:45;
+  atsfp 6 2012/03/17 22:46:45;
+  cltt 6 2012/03/17 22:31:45;
+  binding state free;
+  hardware ethernet d0:67:e5:44:e8:48;
+  uid "\001\320g\345D\350H";
+}
+lease 10.0.0.137 {
+  starts 0 2012/03/18 02:38:04;
+  ends 0 2012/03/18 02:48:04;
+  tstp 0 2012/03/18 02:48:04;
+  tsfp 0 2012/03/18 02:53:04;
+  atsfp 0 2012/03/18 02:53:04;
+  cltt 0 2012/03/18 02:38:04;
+  binding state free;
+  hardware ethernet d0:67:e5:38:63:57;
+  uid "\001\320g\3458cW";
+}
+lease 10.0.0.132 {
+  starts 0 2012/03/18 02:31:49;
+  ends 0 2012/03/18 04:31:49;
+  tstp 0 2012/03/18 04:31:49;
+  tsfp 0 2012/03/18 05:31:49;
+  atsfp 0 2012/03/18 05:31:49;
+  cltt 0 2012/03/18 02:31:49;
+  binding state free;
+  hardware ethernet 3c:07:54:18:03:15;
+  uid "\001<\007T\030\003\025";
+}
+lease 10.0.0.134 {
+  starts 0 2012/03/18 02:49:48;
+  ends 0 2012/03/18 04:49:48;
+  tstp 0 2012/03/18 04:49:48;
+  tsfp 0 2012/03/18 05:49:48;
+  atsfp 0 2012/03/18 05:49:48;
+  cltt 0 2012/03/18 02:49:48;
+  binding state free;
+  hardware ethernet c8:2a:14:04:7c:09;
+  uid "\001\310*\024\004|\011";
+}
+lease 10.0.0.79 {
+  starts 0 2012/03/18 06:56:39;
+  ends 0 2012/03/18 07:06:39;
+  tstp 0 2012/03/18 07:11:39;
+  tsfp 0 2012/03/18 07:11:39;
+  atsfp 0 2012/03/18 07:11:39;
+  cltt 0 2012/03/18 06:56:39;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 00:50:56:9d:04:72;
+}
+lease 10.0.0.131 {
+  starts 0 2012/03/18 06:56:51;
+  ends 0 2012/03/18 07:06:51;
+  tstp 0 2012/03/18 07:11:51;
+  tsfp 0 2012/03/18 07:11:51;
+  atsfp 0 2012/03/18 07:11:51;
+  cltt 0 2012/03/18 06:56:51;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 1c:6f:65:ad:99:ff;
+  uid "\001\034oe\255\231\377";
+  set ddns-txt = "31fc52937881fd732aa9c3c07e2333679a";
+  set ddns-fwd-name = "Shamanix.participants.bf.lan";
+  client-hostname "Shamanix";
+}
+lease 10.0.0.150 {
+  starts 0 2012/03/18 06:57:02;
+  ends 0 2012/03/18 07:07:02;
+  tstp 6 2012/03/17 20:18:15;
+  tsfp 0 2012/03/18 07:12:02;
+  atsfp 0 2012/03/18 07:12:02;
+  cltt 6 2012/03/17 20:05:12;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 00:24:e8:9e:5c:d2;
+  set ddns-txt = "004f535a8bb851842d7b603b0dff1ea242";
+  set ddns-fwd-name = "bf-laptop.participants.bf.lan";
+  client-hostname "bf-laptop";
+}
+lease 10.0.0.65 {
+  starts 0 2012/03/18 06:57:06;
+  ends 0 2012/03/18 07:07:06;
+  tstp 0 2012/03/18 07:12:06;
+  tsfp 0 2012/03/18 07:12:06;
+  atsfp 0 2012/03/18 07:12:06;
+  cltt 0 2012/03/18 06:57:06;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 5c:26:0a:20:6e:98;
+  set ddns-txt = "00bbfb57dac4a33210d61da5319df45b5a";
+  set ddns-fwd-name = "hpfjeld.participants.bf.lan";
+  client-hostname "hpfjeld";
+}
+lease 10.0.0.52 {
+  starts 0 2012/03/18 06:59:09;
+  ends 0 2012/03/18 07:09:09;
+  tstp 0 2012/03/18 07:14:09;
+  tsfp 0 2012/03/18 07:14:09;
+  atsfp 0 2012/03/18 07:14:09;
+  cltt 0 2012/03/18 06:59:09;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 54:04:a6:47:51:a8;
+  uid "\001T\004\246GQ\250";
+  set ddns-txt = "314bf68eb46dfdec9418db8d71d4ed3be2";
+  set ddns-fwd-name = "BAXTOP.participants.bf.lan";
+  client-hostname "BAXTOP";
+}
+lease 10.0.0.67 {
+  starts 0 2012/03/18 06:59:28;
+  ends 0 2012/03/18 07:09:28;
+  tstp 0 2012/03/18 07:14:28;
+  tsfp 0 2012/03/18 07:09:54;
+  cltt 0 2012/03/18 06:59:28;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 00:15:60:c8:ae:92;
+  set ddns-txt = "007ecf845888f387590d78530d0fd2b8ce";
+  set ddns-fwd-name = "atluxity-laptop.participants.bf.lan";
+  client-hostname "atluxity-laptop";
+}
+lease 10.0.0.143 {
+  starts 0 2012/03/18 06:07:20;
+  ends 0 2012/03/18 08:07:20;
+  tstp 0 2012/03/18 09:07:20;
+  tsfp 0 2012/03/18 09:07:20;
+  atsfp 0 2012/03/18 09:07:20;
+  cltt 0 2012/03/18 06:07:20;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 70:cd:60:f2:09:84;
+  uid "\001p\315`\362\011\204";
+  set ddns-txt = "31081b8b7bdee73b7a361ef0798b8926f7";
+  set ddns-fwd-name = "pdt-mbp.participants.bf.lan";
+  client-hostname "pdt-mbp";
+}
+lease 10.0.0.151 {
+  starts 0 2012/03/18 05:39:33;
+  tstp 0 2012/03/18 05:39:33;
+  tsfp 0 2012/03/18 05:39:33;
+  atsfp 0 2012/03/18 05:39:33;
+  binding state backup;
+}
+lease 10.0.0.144 {
+  starts 6 2012/03/17 12:39:00;
+  tstp 6 2012/03/17 12:39:00;
+  tsfp 6 2012/03/17 12:39:00;
+  atsfp 6 2012/03/17 12:39:00;
+  binding state backup;
+}
+lease 10.0.0.84 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.85 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.86 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.87 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.88 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.89 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.90 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.91 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.92 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.93 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.94 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.95 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.96 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.97 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.98 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.99 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.100 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.101 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.102 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.103 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.104 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.105 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.106 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.107 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.108 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.109 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.110 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.111 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.112 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.113 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.114 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.115 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.116 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.117 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.118 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.119 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.120 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.121 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.122 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.123 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.124 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.125 {
+  starts 5 2012/03/16 00:45:45;
+  tstp 5 2012/03/16 00:45:45;
+  tsfp 5 2012/03/16 00:45:45;
+  atsfp 5 2012/03/16 00:45:45;
+  binding state backup;
+}
+lease 10.0.0.54 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.55 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.56 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.57 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.58 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.59 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.60 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.61 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.62 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.63 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.50 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.51 {
+  starts 5 2012/03/16 00:42:12;
+  tstp 5 2012/03/16 00:42:12;
+  tsfp 5 2012/03/16 00:42:12;
+  atsfp 5 2012/03/16 00:42:12;
+  binding state backup;
+}
+lease 10.0.0.69 {
+  starts 5 2012/03/16 20:01:32;
+  ends 5 2012/03/16 20:01:31;
+  tstp 5 2012/03/16 20:01:32;
+  tsfp 5 2012/03/16 20:01:32;
+  atsfp 5 2012/03/16 20:01:32;
+  binding state backup;
+  hardware ethernet 00:50:56:9d:04:69;
+  uid "\001\000PV\235\004i";
+}
+lease 10.0.0.70 {
+  starts 5 2012/03/16 20:05:29;
+  ends 5 2012/03/16 20:05:28;
+  tstp 5 2012/03/16 20:05:29;
+  tsfp 5 2012/03/16 20:05:29;
+  atsfp 5 2012/03/16 20:05:29;
+  binding state backup;
+  hardware ethernet 00:50:56:9d:04:69;
+}
+lease 10.0.0.71 {
+  starts 5 2012/03/16 23:00:40;
+  ends 5 2012/03/16 23:00:39;
+  tstp 5 2012/03/16 23:00:40;
+  tsfp 5 2012/03/16 23:00:40;
+  atsfp 5 2012/03/16 23:00:40;
+  cltt 5 2012/03/16 21:45:41;
+  binding state backup;
+  hardware ethernet 28:37:37:01:85:fa;
+  uid "\001(77\001\205\372";
+}
+lease 10.0.0.72 {
+  starts 5 2012/03/16 23:02:44;
+  ends 5 2012/03/16 23:02:43;
+  tstp 5 2012/03/16 23:02:44;
+  tsfp 5 2012/03/16 23:02:44;
+  atsfp 5 2012/03/16 23:02:44;
+  cltt 5 2012/03/16 22:42:42;
+  binding state backup;
+  hardware ethernet 00:50:56:9d:04:6a;
+  uid "\001\000PV\235\004j";
+}
+lease 10.0.0.73 {
+  starts 5 2012/03/16 23:06:32;
+  ends 5 2012/03/16 23:06:31;
+  tstp 5 2012/03/16 23:06:32;
+  tsfp 5 2012/03/16 23:06:32;
+  atsfp 5 2012/03/16 23:06:32;
+  binding state backup;
+  hardware ethernet 00:50:56:9d:04:6a;
+}
+lease 10.0.0.133 {
+  starts 6 2012/03/17 01:20:08;
+  ends 6 2012/03/17 01:20:06;
+  tstp 6 2012/03/17 01:20:08;
+  tsfp 6 2012/03/17 01:20:08;
+  atsfp 6 2012/03/17 01:20:08;
+  cltt 5 2012/03/16 21:20:06;
+  binding state backup;
+  hardware ethernet 00:1b:38:68:ad:47;
+  uid "\001\000\0338h\255G";
+}
+lease 10.0.0.128 {
+  starts 6 2012/03/17 01:45:48;
+  ends 6 2012/03/17 01:45:46;
+  tstp 6 2012/03/17 01:45:48;
+  tsfp 6 2012/03/17 01:45:48;
+  atsfp 6 2012/03/17 01:45:48;
+  cltt 5 2012/03/16 18:39:21;
+  binding state backup;
+  hardware ethernet 00:21:86:a3:73:c8;
+  uid "\001\000!\206\243s\310";
+}
+lease 10.0.0.74 {
+  starts 6 2012/03/17 02:44:25;
+  ends 6 2012/03/17 02:44:24;
+  tstp 6 2012/03/17 02:44:25;
+  tsfp 6 2012/03/17 02:44:25;
+  atsfp 6 2012/03/17 02:44:25;
+  binding state backup;
+  hardware ethernet 00:50:56:9d:04:6c;
+  uid "\001\000PV\235\004l";
+}
+lease 10.0.0.139 {
+  starts 6 2012/03/17 02:57:09;
+  ends 6 2012/03/17 02:57:08;
+  tstp 6 2012/03/17 02:57:09;
+  tsfp 6 2012/03/17 02:57:09;
+  atsfp 6 2012/03/17 02:57:09;
+  cltt 6 2012/03/17 02:47:08;
+  binding state backup;
+  hardware ethernet 00:50:56:9d:04:6e;
+}
+lease 10.0.0.66 {
+  starts 6 2012/03/17 05:57:55;
+  ends 6 2012/03/17 05:57:54;
+  tstp 6 2012/03/17 05:57:55;
+  tsfp 6 2012/03/17 05:57:55;
+  atsfp 6 2012/03/17 05:57:55;
+  cltt 5 2012/03/16 23:19:48;
+  binding state backup;
+  hardware ethernet 00:24:e8:9e:5c:d2;
+}
+lease 10.0.0.53 {
+  starts 6 2012/03/17 06:59:22;
+  ends 6 2012/03/17 06:59:21;
+  tstp 6 2012/03/17 06:59:22;
+  tsfp 6 2012/03/17 06:59:22;
+  atsfp 6 2012/03/17 06:59:22;
+  cltt 5 2012/03/16 23:59:21;
+  binding state backup;
+  hardware ethernet 70:cd:60:f2:09:84;
+  uid "\001p\315`\362\011\204";
+}
+lease 10.0.0.142 {
+  starts 6 2012/03/17 11:39:00;
+  ends 6 2012/03/17 10:54:32;
+  tstp 6 2012/03/17 11:39:00;
+  tsfp 6 2012/03/17 11:39:00;
+  atsfp 6 2012/03/17 11:39:00;
+  cltt 6 2012/03/17 10:52:32;
+  binding state backup;
+  hardware ethernet 00:15:60:c8:ae:92;
+  client-hostname "atluxity-laptop";
+}
+lease 10.0.0.82 {
+  starts 6 2012/03/17 17:50:45;
+  ends 6 2012/03/17 17:50:44;
+  tstp 6 2012/03/17 17:50:45;
+  tsfp 6 2012/03/17 17:50:45;
+  atsfp 6 2012/03/17 17:50:45;
+  cltt 6 2012/03/17 17:35:43;
+  binding state backup;
+  hardware ethernet 00:50:56:9d:04:73;
+  uid "\001\000PV\235\004s";
+}
+lease 10.0.0.145 {
+  starts 6 2012/03/17 23:07:17;
+  ends 6 2012/03/17 23:07:16;
+  tstp 6 2012/03/17 23:07:17;
+  tsfp 6 2012/03/17 23:07:17;
+  atsfp 6 2012/03/17 23:07:17;
+  cltt 6 2012/03/17 22:57:16;
+  binding state backup;
+  hardware ethernet 00:1b:fc:b4:35:ed;
+  uid "\001\000\033\374\2645\355";
+}
+lease 10.0.0.127 {
+  starts 0 2012/03/18 02:27:20;
+  ends 0 2012/03/18 02:27:19;
+  tstp 0 2012/03/18 02:27:20;
+  tsfp 0 2012/03/18 02:27:20;
+  atsfp 0 2012/03/18 02:27:20;
+  binding state backup;
+  hardware ethernet 14:da:e9:4f:8d:b5;
+  uid "\001\024\332\351O\215\265";
+}
+lease 10.0.0.146 {
+  starts 0 2012/03/18 02:42:24;
+  ends 0 2012/03/18 02:42:23;
+  tstp 0 2012/03/18 02:42:24;
+  tsfp 0 2012/03/18 02:42:24;
+  atsfp 0 2012/03/18 02:42:24;
+  cltt 6 2012/03/17 21:45:58;
+  binding state backup;
+  hardware ethernet 00:21:86:a3:73:c8;
+  uid "\001\000!\206\243s\310";
+}
+server-duid "\000\001\000\001\026\365H\335\000PV\235@\365";
+
+lease 10.0.0.67 {
+  starts 0 2012/03/18 06:59:28;
+  ends 0 2012/03/18 07:09:28;
+  tstp 0 2012/03/18 07:14:28;
+  tsfp 0 2012/03/18 07:14:28;
+  atsfp 0 2012/03/18 07:14:28;
+  cltt 0 2012/03/18 06:59:28;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 00:15:60:c8:ae:92;
+  set ddns-txt = "007ecf845888f387590d78530d0fd2b8ce";
+  set ddns-fwd-name = "atluxity-laptop.participants.bf.lan";
+  client-hostname "atluxity-laptop";
+}
+lease 10.0.0.65 {
+  starts 0 2012/03/18 07:00:59;
+  ends 0 2012/03/18 07:10:59;
+  tstp 0 2012/03/18 07:15:59;
+  tsfp 0 2012/03/18 07:12:06;
+  cltt 0 2012/03/18 07:00:59;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 5c:26:0a:20:6e:98;
+  set ddns-txt = "00bbfb57dac4a33210d61da5319df45b5a";
+  set ddns-fwd-name = "hpfjeld.participants.bf.lan";
+  client-hostname "hpfjeld";
+}
+lease 10.0.0.79 {
+  starts 0 2012/03/18 07:01:00;
+  ends 0 2012/03/18 07:11:00;
+  tstp 0 2012/03/18 07:16:00;
+  tsfp 0 2012/03/18 07:11:39;
+  cltt 0 2012/03/18 07:01:00;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 00:50:56:9d:04:72;
+}
+lease 10.0.0.65 {
+  starts 0 2012/03/18 07:00:59;
+  ends 0 2012/03/18 07:10:59;
+  tstp 0 2012/03/18 07:15:59;
+  tsfp 0 2012/03/18 07:15:59;
+  atsfp 0 2012/03/18 07:15:59;
+  cltt 0 2012/03/18 07:00:59;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 5c:26:0a:20:6e:98;
+  set ddns-txt = "00bbfb57dac4a33210d61da5319df45b5a";
+  set ddns-fwd-name = "hpfjeld.participants.bf.lan";
+  client-hostname "hpfjeld";
+}
+lease 10.0.0.79 {
+  starts 0 2012/03/18 07:01:00;
+  ends 0 2012/03/18 07:11:00;
+  tstp 0 2012/03/18 07:16:00;
+  tsfp 0 2012/03/18 07:16:00;
+  atsfp 0 2012/03/18 07:16:00;
+  cltt 0 2012/03/18 07:01:00;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 00:50:56:9d:04:72;
+}
+lease 10.0.0.150 {
+  starts 0 2012/03/18 07:01:30;
+  ends 0 2012/03/18 07:11:30;
+  tstp 6 2012/03/17 20:18:15;
+  tsfp 0 2012/03/18 07:16:30;
+  atsfp 0 2012/03/18 07:16:30;
+  cltt 6 2012/03/17 20:05:12;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 00:24:e8:9e:5c:d2;
+  set ddns-txt = "004f535a8bb851842d7b603b0dff1ea242";
+  set ddns-fwd-name = "bf-laptop.participants.bf.lan";
+  client-hostname "bf-laptop";
+}
+lease 10.0.0.131 {
+  starts 0 2012/03/18 07:01:51;
+  ends 0 2012/03/18 07:11:51;
+  tstp 0 2012/03/18 07:16:51;
+  tsfp 0 2012/03/18 07:11:51;
+  cltt 0 2012/03/18 07:01:51;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 1c:6f:65:ad:99:ff;
+  uid "\001\034oe\255\231\377";
+  set ddns-txt = "31fc52937881fd732aa9c3c07e2333679a";
+  set ddns-fwd-name = "Shamanix.participants.bf.lan";
+  client-hostname "Shamanix";
+}
+lease 10.0.0.131 {
+  starts 0 2012/03/18 07:01:51;
+  ends 0 2012/03/18 07:11:51;
+  tstp 0 2012/03/18 07:16:51;
+  tsfp 0 2012/03/18 07:16:51;
+  atsfp 0 2012/03/18 07:16:51;
+  cltt 0 2012/03/18 07:01:51;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 1c:6f:65:ad:99:ff;
+  uid "\001\034oe\255\231\377";
+  set ddns-txt = "31fc52937881fd732aa9c3c07e2333679a";
+  set ddns-fwd-name = "Shamanix.participants.bf.lan";
+  client-hostname "Shamanix";
+}
+lease 10.0.0.67 {
+  starts 0 2012/03/18 07:03:27;
+  ends 0 2012/03/18 07:13:27;
+  tstp 0 2012/03/18 07:18:27;
+  tsfp 0 2012/03/18 07:14:28;
+  cltt 0 2012/03/18 07:03:27;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 00:15:60:c8:ae:92;
+  set ddns-txt = "007ecf845888f387590d78530d0fd2b8ce";
+  set ddns-fwd-name = "atluxity-laptop.participants.bf.lan";
+  client-hostname "atluxity-laptop";
+}
+lease 10.0.0.67 {
+  starts 0 2012/03/18 07:03:27;
+  ends 0 2012/03/18 07:13:27;
+  tstp 0 2012/03/18 07:18:27;
+  tsfp 0 2012/03/18 07:18:27;
+  atsfp 0 2012/03/18 07:18:27;
+  cltt 0 2012/03/18 07:03:27;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 00:15:60:c8:ae:92;
+  set ddns-txt = "007ecf845888f387590d78530d0fd2b8ce";
+  set ddns-fwd-name = "atluxity-laptop.participants.bf.lan";
+  client-hostname "atluxity-laptop";
+}
+lease 10.0.0.52 {
+  starts 0 2012/03/18 07:04:09;
+  ends 0 2012/03/18 07:14:09;
+  tstp 0 2012/03/18 07:19:09;
+  tsfp 0 2012/03/18 07:14:09;
+  cltt 0 2012/03/18 07:04:09;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 54:04:a6:47:51:a8;
+  uid "\001T\004\246GQ\250";
+  set ddns-txt = "314bf68eb46dfdec9418db8d71d4ed3be2";
+  set ddns-fwd-name = "BAXTOP.participants.bf.lan";
+  client-hostname "BAXTOP";
+}
+lease 10.0.0.52 {
+  starts 0 2012/03/18 07:04:09;
+  ends 0 2012/03/18 07:14:09;
+  tstp 0 2012/03/18 07:19:09;
+  tsfp 0 2012/03/18 07:19:09;
+  atsfp 0 2012/03/18 07:19:09;
+  cltt 0 2012/03/18 07:04:09;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 54:04:a6:47:51:a8;
+  uid "\001T\004\246GQ\250";
+  set ddns-txt = "314bf68eb46dfdec9418db8d71d4ed3be2";
+  set ddns-fwd-name = "BAXTOP.participants.bf.lan";
+  client-hostname "BAXTOP";
+}
+lease 10.0.0.65 {
+  starts 0 2012/03/18 07:04:54;
+  ends 0 2012/03/18 07:14:54;
+  tstp 0 2012/03/18 07:19:54;
+  tsfp 0 2012/03/18 07:15:59;
+  cltt 0 2012/03/18 07:04:54;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 5c:26:0a:20:6e:98;
+  set ddns-txt = "00bbfb57dac4a33210d61da5319df45b5a";
+  set ddns-fwd-name = "hpfjeld.participants.bf.lan";
+  client-hostname "hpfjeld";
+}
+lease 10.0.0.65 {
+  starts 0 2012/03/18 07:04:54;
+  ends 0 2012/03/18 07:14:54;
+  tstp 0 2012/03/18 07:19:54;
+  tsfp 0 2012/03/18 07:19:54;
+  atsfp 0 2012/03/18 07:19:54;
+  cltt 0 2012/03/18 07:04:54;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 5c:26:0a:20:6e:98;
+  set ddns-txt = "00bbfb57dac4a33210d61da5319df45b5a";
+  set ddns-fwd-name = "hpfjeld.participants.bf.lan";
+  client-hostname "hpfjeld";
+}
+lease 10.0.0.150 {
+  starts 0 2012/03/18 07:05:20;
+  ends 0 2012/03/18 07:15:20;
+  tstp 6 2012/03/17 20:18:15;
+  tsfp 0 2012/03/18 07:20:20;
+  atsfp 0 2012/03/18 07:20:20;
+  cltt 6 2012/03/17 20:05:12;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 00:24:e8:9e:5c:d2;
+  set ddns-txt = "004f535a8bb851842d7b603b0dff1ea242";
+  set ddns-fwd-name = "bf-laptop.participants.bf.lan";
+  client-hostname "bf-laptop";
+}
+lease 10.0.0.79 {
+  starts 0 2012/03/18 07:05:31;
+  ends 0 2012/03/18 07:15:31;
+  tstp 0 2012/03/18 07:20:31;
+  tsfp 0 2012/03/18 07:16:00;
+  cltt 0 2012/03/18 07:05:31;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 00:50:56:9d:04:72;
+}
+lease 10.0.0.79 {
+  starts 0 2012/03/18 07:05:31;
+  ends 0 2012/03/18 07:15:31;
+  tstp 0 2012/03/18 07:20:31;
+  tsfp 0 2012/03/18 07:20:31;
+  atsfp 0 2012/03/18 07:20:31;
+  cltt 0 2012/03/18 07:05:31;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 00:50:56:9d:04:72;
+}
+lease 10.0.0.131 {
+  starts 0 2012/03/18 07:06:51;
+  ends 0 2012/03/18 07:16:51;
+  tstp 0 2012/03/18 07:21:51;
+  tsfp 0 2012/03/18 07:16:51;
+  cltt 0 2012/03/18 07:06:51;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 1c:6f:65:ad:99:ff;
+  uid "\001\034oe\255\231\377";
+  set ddns-txt = "31fc52937881fd732aa9c3c07e2333679a";
+  set ddns-fwd-name = "Shamanix.participants.bf.lan";
+  client-hostname "Shamanix";
+}
+lease 10.0.0.131 {
+  starts 0 2012/03/18 07:06:51;
+  ends 0 2012/03/18 07:16:51;
+  tstp 0 2012/03/18 07:21:51;
+  tsfp 0 2012/03/18 07:21:51;
+  atsfp 0 2012/03/18 07:21:51;
+  cltt 0 2012/03/18 07:06:51;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 1c:6f:65:ad:99:ff;
+  uid "\001\034oe\255\231\377";
+  set ddns-txt = "31fc52937881fd732aa9c3c07e2333679a";
+  set ddns-fwd-name = "Shamanix.participants.bf.lan";
+  client-hostname "Shamanix";
+}
+lease 10.0.0.143 {
+  starts 0 2012/03/18 07:07:20;
+  ends 0 2012/03/18 09:07:20;
+  tstp 0 2012/03/18 10:07:20;
+  tsfp 0 2012/03/18 09:07:20;
+  cltt 0 2012/03/18 07:07:20;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 70:cd:60:f2:09:84;
+  uid "\001p\315`\362\011\204";
+  set ddns-txt = "31081b8b7bdee73b7a361ef0798b8926f7";
+  set ddns-fwd-name = "pdt-mbp.participants.bf.lan";
+  client-hostname "pdt-mbp";
+}
+lease 10.0.0.143 {
+  starts 0 2012/03/18 07:07:20;
+  ends 0 2012/03/18 09:07:20;
+  tstp 0 2012/03/18 10:07:20;
+  tsfp 0 2012/03/18 10:07:20;
+  atsfp 0 2012/03/18 10:07:20;
+  cltt 0 2012/03/18 07:07:20;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 70:cd:60:f2:09:84;
+  uid "\001p\315`\362\011\204";
+  set ddns-txt = "31081b8b7bdee73b7a361ef0798b8926f7";
+  set ddns-fwd-name = "pdt-mbp.participants.bf.lan";
+  client-hostname "pdt-mbp";
+}
+lease 10.0.0.67 {
+  starts 0 2012/03/18 07:07:53;
+  ends 0 2012/03/18 07:17:53;
+  tstp 0 2012/03/18 07:22:53;
+  tsfp 0 2012/03/18 07:18:27;
+  cltt 0 2012/03/18 07:07:53;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 00:15:60:c8:ae:92;
+  set ddns-txt = "007ecf845888f387590d78530d0fd2b8ce";
+  set ddns-fwd-name = "atluxity-laptop.participants.bf.lan";
+  client-hostname "atluxity-laptop";
+}
+lease 10.0.0.67 {
+  starts 0 2012/03/18 07:07:53;
+  ends 0 2012/03/18 07:17:53;
+  tstp 0 2012/03/18 07:22:53;
+  tsfp 0 2012/03/18 07:22:53;
+  atsfp 0 2012/03/18 07:22:53;
+  cltt 0 2012/03/18 07:07:53;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 00:15:60:c8:ae:92;
+  set ddns-txt = "007ecf845888f387590d78530d0fd2b8ce";
+  set ddns-fwd-name = "atluxity-laptop.participants.bf.lan";
+  client-hostname "atluxity-laptop";
+}
+lease 10.0.0.52 {
+  starts 0 2012/03/18 07:09:09;
+  ends 0 2012/03/18 07:19:09;
+  tstp 0 2012/03/18 07:24:09;
+  tsfp 0 2012/03/18 07:19:09;
+  cltt 0 2012/03/18 07:09:09;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 54:04:a6:47:51:a8;
+  uid "\001T\004\246GQ\250";
+  set ddns-txt = "314bf68eb46dfdec9418db8d71d4ed3be2";
+  set ddns-fwd-name = "BAXTOP.participants.bf.lan";
+  client-hostname "BAXTOP";
+}
+lease 10.0.0.52 {
+  starts 0 2012/03/18 07:09:09;
+  ends 0 2012/03/18 07:19:09;
+  tstp 0 2012/03/18 07:24:09;
+  tsfp 0 2012/03/18 07:24:09;
+  atsfp 0 2012/03/18 07:24:09;
+  cltt 0 2012/03/18 07:09:09;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 54:04:a6:47:51:a8;
+  uid "\001T\004\246GQ\250";
+  set ddns-txt = "314bf68eb46dfdec9418db8d71d4ed3be2";
+  set ddns-fwd-name = "BAXTOP.participants.bf.lan";
+  client-hostname "BAXTOP";
+}
+lease 10.0.0.65 {
+  starts 0 2012/03/18 07:09:15;
+  ends 0 2012/03/18 07:19:15;
+  tstp 0 2012/03/18 07:24:15;
+  tsfp 0 2012/03/18 07:19:54;
+  cltt 0 2012/03/18 07:09:15;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 5c:26:0a:20:6e:98;
+  set ddns-txt = "00bbfb57dac4a33210d61da5319df45b5a";
+  set ddns-fwd-name = "hpfjeld.participants.bf.lan";
+  client-hostname "hpfjeld";
+}
+lease 10.0.0.65 {
+  starts 0 2012/03/18 07:09:15;
+  ends 0 2012/03/18 07:19:15;
+  tstp 0 2012/03/18 07:24:15;
+  tsfp 0 2012/03/18 07:24:15;
+  atsfp 0 2012/03/18 07:24:15;
+  cltt 0 2012/03/18 07:09:15;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 5c:26:0a:20:6e:98;
+  set ddns-txt = "00bbfb57dac4a33210d61da5319df45b5a";
+  set ddns-fwd-name = "hpfjeld.participants.bf.lan";
+  client-hostname "hpfjeld";
+}
+lease 10.0.0.79 {
+  starts 0 2012/03/18 07:10:00;
+  ends 0 2012/03/18 07:20:00;
+  tstp 0 2012/03/18 07:25:00;
+  tsfp 0 2012/03/18 07:20:31;
+  cltt 0 2012/03/18 07:10:00;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 00:50:56:9d:04:72;
+}
+lease 10.0.0.79 {
+  starts 0 2012/03/18 07:10:00;
+  ends 0 2012/03/18 07:20:00;
+  tstp 0 2012/03/18 07:25:00;
+  tsfp 0 2012/03/18 07:25:00;
+  atsfp 0 2012/03/18 07:25:00;
+  cltt 0 2012/03/18 07:10:00;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 00:50:56:9d:04:72;
+}
+lease 10.0.0.150 {
+  starts 0 2012/03/18 07:10:11;
+  ends 0 2012/03/18 07:20:11;
+  tstp 6 2012/03/17 20:18:15;
+  tsfp 0 2012/03/18 07:25:11;
+  atsfp 0 2012/03/18 07:25:11;
+  cltt 6 2012/03/17 20:05:12;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 00:24:e8:9e:5c:d2;
+  set ddns-txt = "004f535a8bb851842d7b603b0dff1ea242";
+  set ddns-fwd-name = "bf-laptop.participants.bf.lan";
+  client-hostname "bf-laptop";
+}
+lease 10.0.0.131 {
+  starts 0 2012/03/18 07:11:51;
+  ends 0 2012/03/18 07:21:51;
+  tstp 0 2012/03/18 07:26:51;
+  tsfp 0 2012/03/18 07:21:51;
+  cltt 0 2012/03/18 07:11:51;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 1c:6f:65:ad:99:ff;
+  uid "\001\034oe\255\231\377";
+  set ddns-txt = "31fc52937881fd732aa9c3c07e2333679a";
+  set ddns-fwd-name = "Shamanix.participants.bf.lan";
+  client-hostname "Shamanix";
+}
+lease 10.0.0.131 {
+  starts 0 2012/03/18 07:11:51;
+  ends 0 2012/03/18 07:21:51;
+  tstp 0 2012/03/18 07:26:51;
+  tsfp 0 2012/03/18 07:26:51;
+  atsfp 0 2012/03/18 07:26:51;
+  cltt 0 2012/03/18 07:11:51;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 1c:6f:65:ad:99:ff;
+  uid "\001\034oe\255\231\377";
+  set ddns-txt = "31fc52937881fd732aa9c3c07e2333679a";
+  set ddns-fwd-name = "Shamanix.participants.bf.lan";
+  client-hostname "Shamanix";
+}
+lease 10.0.0.67 {
+  starts 0 2012/03/18 07:12:42;
+  ends 0 2012/03/18 07:22:42;
+  tstp 0 2012/03/18 07:27:42;
+  tsfp 0 2012/03/18 07:22:53;
+  cltt 0 2012/03/18 07:12:42;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 00:15:60:c8:ae:92;
+  set ddns-txt = "007ecf845888f387590d78530d0fd2b8ce";
+  set ddns-fwd-name = "atluxity-laptop.participants.bf.lan";
+  client-hostname "atluxity-laptop";
+}
+lease 10.0.0.67 {
+  starts 0 2012/03/18 07:12:42;
+  ends 0 2012/03/18 07:22:42;
+  tstp 0 2012/03/18 07:27:42;
+  tsfp 0 2012/03/18 07:27:42;
+  atsfp 0 2012/03/18 07:27:42;
+  cltt 0 2012/03/18 07:12:42;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 00:15:60:c8:ae:92;
+  set ddns-txt = "007ecf845888f387590d78530d0fd2b8ce";
+  set ddns-fwd-name = "atluxity-laptop.participants.bf.lan";
+  client-hostname "atluxity-laptop";
+}
+lease 10.0.0.65 {
+  starts 0 2012/03/18 07:13:26;
+  ends 0 2012/03/18 07:23:26;
+  tstp 0 2012/03/18 07:28:26;
+  tsfp 0 2012/03/18 07:24:15;
+  cltt 0 2012/03/18 07:13:26;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 5c:26:0a:20:6e:98;
+  set ddns-txt = "00bbfb57dac4a33210d61da5319df45b5a";
+  set ddns-fwd-name = "hpfjeld.participants.bf.lan";
+  client-hostname "hpfjeld";
+}
+lease 10.0.0.65 {
+  starts 0 2012/03/18 07:13:26;
+  ends 0 2012/03/18 07:23:26;
+  tstp 0 2012/03/18 07:28:26;
+  tsfp 0 2012/03/18 07:28:26;
+  atsfp 0 2012/03/18 07:28:26;
+  cltt 0 2012/03/18 07:13:26;
+  binding state active;
+  next binding state expired;
+  hardware ethernet 5c:26:0a:20:6e:98;
+  set ddns-txt = "00bbfb57dac4a33210d61da5319df45b5a";
+  set ddns-fwd-name = "hpfjeld.participants.bf.lan";
+  client-hostname "hpfjeld";
+}
