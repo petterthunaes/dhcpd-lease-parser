@@ -62,7 +62,7 @@ while (my $line = <$fh>) {
 			$value = $1;
         }
         if ( $line =~ /^next binding state (\w+)\;$/ ) {
-        	$value_name = "next-binding-state";
+			$value_name = "next-binding-state";
             $value = $1;
         }
         if ( $line =~ /^hardware ethernet (.*)\;$/ ) {
@@ -70,7 +70,7 @@ while (my $line = <$fh>) {
             $value = $1;
         }
         if ( $line =~ /^set ddns-txt = \"(.*)\"\;$/ ) {
-        	$value_name = "ddns-txt";
+			$value_name = "ddns-txt";
             $value = $1;
         }
         if ( $line =~ /^set ddns-fwd-name = \"(.*)\"\;$/ ) {
