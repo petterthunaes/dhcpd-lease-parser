@@ -9,7 +9,7 @@ use Data::Dumper;
 my $filename = "test/dhcpd.leases";
 
 my $open = 0;
-my $decl = {};
+my $decl; 
 
 open my $fh, '<', $filename or die "ERR - Could not open file: $!";
 
@@ -85,12 +85,24 @@ while (my $line = <$fh>) {
 			$value_name = "uid";
             $value = $1;
 		}
-
-		$decl->{$i}->{$ip}->{$value_name} = $value;
+		if (defined $value) {
+			$decl->{$i}->{$ip}->{$value_name} = $value;
+		}
 	}
 	
 }
 
-print Dumper($decl);
+for my $k1 ( sort keys %$decl ) {
+	print "$k1\n";
+	for my $k2 ( sort keys %{$decl->{$k1}} ) {
+		print "\t$k2\n";
+		for my $k3 ( sort keys %{$decl->{$k1}->{$k2}} ) {
+			print "\t\t$k3 -- " . $decl->{$k1}->{$k2}->{$k3} . "\n";
+		}
+	}
+
+}
+
+#print Dumper($decl);
 
 exit 0;
