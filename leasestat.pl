@@ -46,7 +46,7 @@ while (my $line = <$fh>) {
        	$value = $1;
        	$value_name = "binding-state";
        }
-              elsif( $line =~ /^next binding state (\w+)\;$/ ){ 
+       elsif( $line =~ /^next binding state (\w+)\;$/ ){ 
        	$value = $1;
        	$value_name = "next-binding-state";
        }
@@ -72,15 +72,16 @@ while (my $line = <$fh>) {
 
 close $fh;
 
-for my $k1 ( sort keys %$decl ) {
-	print "$k1\n";
-	for my $k2 ( sort keys %{$decl->{$k1}} ) {
-		print "\t$k2\n";
-		for my $k3 ( sort keys %{$decl->{$k1}->{$k2}} ) {
-			print "\t\t$k3 -- " . $decl->{$k1}->{$k2}->{$k3} . "\n";
+while( my ($key1, $href1) = each( %$decl ) ) {
+	print "$key1\n";
+	
+	while( my ($key2, $href2 ) = each( %$href1 ) ){
+		print"\t$key2\n";
+		
+		while( my ( $key3, $val ) = each( $href2 ) ){
+			print "\t\t$key3 -- $val\n";
 		}
 	}
-
 }
 
 exit 0;
