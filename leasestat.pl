@@ -14,6 +14,10 @@ open my $fh, '<', $filename or die "ERR - Could not open file: $!";
 while (my $line = <$fh>) {
 	$line =~ s/^\s+//;
 	$line =~ s/\s+$//;	
+
+	if ( $line =~ /^(\#|'server-duid|failover)/ ) {
+		next;
+	}
 	if ( $line =~ /^lease (\d+\.\d+\.\d+\.\d+) \{$/ ) {
 		$ip = $1;
 		$i++;
@@ -58,7 +62,7 @@ close $fh;
 
 while( my ($key1, $href1) = each( %$decl ) ) {
 	print "$key1\n";
-	
+
 	while( my ($key2, $href2 ) = each( %$href1 ) ) {
 		print"\t$key2\n";
 		

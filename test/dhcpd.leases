@@ -1,11 +1,13 @@
 # The format of this file is documented in the dhcpd.leases(5) manual page.
 # This lease file was written by isc-dhcp-4.1.1-P1
 
+server-duid = "\000\001\000\001\026\365H\335\000PV\235@\365";
 
-failover peer "dhcp-failover" state {
-  my state normal at 6 2012/03/17 05:38:52;
-  partner state normal at 5 2012/03/16 00:42:05;
+failover {
+	my state normal at 6 2012/03/17 05:38:52;
+	partner state normal at 5 2012/03/16 00:42:05;
 }
+
 lease 10.0.0.68 {
   starts 5 2012/03/16 01:19:13;
   ends 5 2012/03/16 01:03:43;
@@ -877,8 +879,6 @@ lease 10.0.0.146 {
   hardware ethernet 00:21:86:a3:73:c8;
   uid "\001\000!\206\243s\310";
 }
-server-duid "\000\001\000\001\026\365H\335\000PV\235@\365";
-
 lease 10.0.0.67 {
   starts 0 2012/03/18 06:59:28;
   ends 0 2012/03/18 07:09:28;
