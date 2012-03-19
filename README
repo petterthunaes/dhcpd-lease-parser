@@ -1,6 +1,6 @@
 # README
 
-This script parses the dhcpd.leases file holding ip-address information for each client.
+This script parses the dhcpd.leases file storing lease info for each client.
 
 It have been tested, on the leases file, used with ISC DHCP server.
 
