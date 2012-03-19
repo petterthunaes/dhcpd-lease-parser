@@ -1,9 +1,12 @@
-# dhcp-lease-parser
-#
-# author: Petter Dahl Thunaes <petter@thunaes.no>
-#
+# README
 
-This scripts take a dhcpd.lease file, and store the information in one large hash.
+This script parses the dhcpd.leases file holding ip-address information for each client.
+
+It have been tested, on the leases file, used with ISC DHCP server.
+
+Information from this file is stored in one large hash, and printed to stdout.
+
+Script will also add a failover statement, if available and configured.
 
 #
 

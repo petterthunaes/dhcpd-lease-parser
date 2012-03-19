@@ -1,4 +1,9 @@
 #!/usr/bin/perl
+#
+# parser.pl - retrives every client lease from the dhcpd.leases file
+#
+# author: Petter Dahl Thunaes <petter@thunaes.no>
+#
 
 use strict;
 use warnings;
