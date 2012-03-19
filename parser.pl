@@ -7,7 +7,7 @@ use lib "/Users/petter/perl5/lib/perl5";
 use Data::Dumper;
 
 my $filename = "test/dhcpd.leases";
-my ($ip,$i,$decl);
+my ($uid,$i,$decl);
 
 open my $fh, '<', $filename or die "ERR - Could not open file: $!";
 
@@ -15,12 +15,12 @@ while (my $line = <$fh>) {
 	$line =~ s/^\s+//;
 	$line =~ s/\s+$//;	
 
-	if ( $line =~ /^(\#|'server-duid|failover)/ ) {
+	if ( $line =~ /^(\#|server-duid)/ ) {
 		next;
 	}
 
-	if ( $line =~ /^lease (\d+\.\d+\.\d+\.\d+) \{$/ ) {
-		$ip = $1;
+	if ( $line =~ /(failover|(\d+\.\d+\.\d+\.\d+)) \{$/ ) {
+		$uid = $1;
 		$i++;
 		next;
 	}
@@ -29,8 +29,12 @@ while (my $line = <$fh>) {
 		next;
 	} else {
 		my ($value_name,$value);
-
-		if( $line =~ / (\d) (\d+)\/(\d+)\/(\d+) (\d+\:\d+\:\d+)\;$/ ) {
+		
+		if ( $line =~ /^(my|partner) state (\w+) at / ) {
+			$value_name = "$1-state";
+			$value = $2;
+		}
+		elsif( $line =~ / (\d) (\d+)\/(\d+)\/(\d+) (\d+\:\d+\:\d+)\;$/ ) {
 			$value = "$1 $2-$3-$4 $5";
 			$value_name = "$1"	if $line =~ /^(starts|ends|tstp|tsfp|atsfp|cltt) /;
 		}
@@ -56,7 +60,7 @@ while (my $line = <$fh>) {
 		}
 
 		if (defined $value) {
-			$decl->{$i}->{$ip}->{$value_name} = $value;
+			$decl->{$i}->{$uid}->{$value_name} = $value;
 		}
 	}	
 }
