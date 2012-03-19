@@ -34,7 +34,7 @@ while (my $line = <$fh>) {
 			$value_name = "$1-state";
 			$value = $2;
 		}
-		elsif( $line =~ / (\d) (\d+)\/(\d+)\/(\d+) (\d+\:\d+\:\d+)\;$/ ) {
+		elsif( $line =~ / (\d) (\d{4})\/(\d{2})\/(\d{2}) (\d{2}\:\d{2}\:\d{2})\;$/ ) {
 			$value = "$1 $2-$3-$4 $5";
 			$value_name = "$1"	if $line =~ /^(starts|ends|tstp|tsfp|atsfp|cltt) /;
 		}
