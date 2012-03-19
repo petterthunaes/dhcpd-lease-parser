@@ -18,15 +18,18 @@ while (my $line = <$fh>) {
 	if ( $line =~ /^(\#|'server-duid|failover)/ ) {
 		next;
 	}
+
 	if ( $line =~ /^lease (\d+\.\d+\.\d+\.\d+) \{$/ ) {
 		$ip = $1;
 		$i++;
 		next;
 	}
+
 	if ( $line =~ /\}$/ ) {
 		next;
 	} else {
 		my ($value_name,$value);
+
 		if( $line =~ / (\d) (\d+)\/(\d+)\/(\d+) (\d+\:\d+\:\d+)\;$/ ) {
 			$value = "$1 $2-$3-$4 $5";
 			$value_name = "$1"	if $line =~ /^(starts|ends|tstp|tsfp|atsfp|cltt) /;
