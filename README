@@ -1,15 +1,9 @@
 #
 # dhcp-lease-parser
-#
 # author: Petter Dahl Thunaes <petter@thunaes.no>
 #
 
-This scripts take a dhcpd.lease file, and put the informaiton into an hash
-using a lot of regex text parsing.
+This scripts take a dhcpd.lease file, and store the information in one large hash.
 
-Still not optimized for large environments
-
-#
-#
 # End
 
