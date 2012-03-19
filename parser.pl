@@ -8,9 +8,6 @@
 use strict;
 use warnings;
 
-use lib "/Users/petter/perl5/lib/perl5";
-use Data::Dumper;
-
 my $filename = "test/dhcpd.leases";
 my ($uid,$i,$decl);
 
